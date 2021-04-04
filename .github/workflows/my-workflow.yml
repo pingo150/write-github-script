@@ -1,4 +1,4 @@
-name: Learning GitHub Script
+Learning GitHub Script
 
 on:
   issues:
@@ -17,9 +17,4 @@ jobs:
             owner: context.repo.owner,
             repo: context.repo.repo,
             body: "🎉 You've created this issue comment using GitHub Script!!!"
-            })
-            github.projects.createCard({
-            column_id: 13697369,
-            content_id: context.payload.issue.id,
-            content_type: "Issue"
-            });
+            
